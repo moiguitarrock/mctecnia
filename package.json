@@ -1,0 +1,22 @@
+{
+  "name": "mctecnia",
+  "version": "1.0.0",
+  "description": "mctecnia website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moiguitarrock/mctecnia.git"
+  },
+  "author": "moises castellar cuervo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moiguitarrock/mctecnia/issues"
+  },
+  "homepage": "https://github.com/moiguitarrock/mctecnia#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
