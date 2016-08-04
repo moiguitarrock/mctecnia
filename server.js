@@ -8,12 +8,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/src/pages/home.html'));
 });
 
-app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname+'/src/pages/about.html'));
+app.get('/quienessomos', function (req, res) {
+  res.sendFile(path.join(__dirname+'/src/pages/quienessomos.html'));
 });
 
-app.get('/services', function (req, res) {
-  res.sendFile(path.join(__dirname+'/src/pages/services.html'));
+app.get('/servicios', function (req, res) {
+  res.sendFile(path.join(__dirname+'/src/pages/servicios.html'));
+});
+
+app.get('/clientes', function (req, res) {
+  res.sendFile(path.join(__dirname+'/src/pages/clientes.html'));
 });
 
 app.listen(process.env.PORT || 3000, function () {
