@@ -4,7 +4,7 @@
   "description": "mctecnia website",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "gulp prod"
   },
   "repository": {
     "type": "git",
