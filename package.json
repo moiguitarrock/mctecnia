@@ -4,7 +4,7 @@
   "description": "mctecnia website",
   "main": "index.js",
   "scripts": {
-    "start": "gulp prod"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
+    "express": "^4.14.0",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
