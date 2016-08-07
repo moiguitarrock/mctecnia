@@ -9,14 +9,14 @@ var app = express(),
 var PORT = process.env.PORT || 3000;
 
 mailer.extend(app, {
-  from: 'no-reply@mctecnia.com',
-  host: ' smtp.zoho.com', // hostname
+  from: 'no-reply@gmail.com',
+  host: ' smtp.gmail.com', // hostname
   secureConnection: true, // use SSL
   port: 465, // port for secure SMTP
   transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
   auth: {
     user: 'maccma.c2@gmail.com',
-    pass: 'Macc1128048663'
+    pass: 'Mcastellar011121314'
   }
 });
 
