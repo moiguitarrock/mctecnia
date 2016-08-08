@@ -1,0 +1,15 @@
+doctype
+html
+  head
+    meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
+    title= subject
+    body
+      h1 McTecnia
+      p Este email fue enviado por la pagina web de McTecnia en la seccion contactenos
+      p <strong>#{name}</strong> nos escribio desde la pagina web:
+      p #{text}
+      br
+      p Su email es:
+        a(href="mailto:#{email}") #{email}
+      p Su telefono es:
+        a(href="tel:#{phone}") #{phone}
