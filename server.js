@@ -9,14 +9,14 @@ var app = express(),
 var PORT = process.env.PORT || 3000;
 
 mailer.extend(app, {
-  from: 'no-reply@gmail.com',
-  host: ' smtp.gmail.com', // hostname
-  secureConnection: true, // use SSL
-  port: 465, // port for secure SMTP
+  from: 'maccma.c2@mctecnia.com',
+  host: 'smtp.zoho.com', // hostname
+  secureConnection: false, // use SSL
+  port: 587, // port for secure SMTP
   transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
   auth: {
-    user: 'maccma.c2@gmail.com',
-    pass: 'Mcastellar011121314'
+    user: 'maccma.c2@mctecnia.com',
+    pass: 'Macc1128048663'
   }
 });
 
@@ -33,11 +33,14 @@ app.get('/', function (req, res) {
 });
 
 app.post('/sendEmail', function(req, res, next) {
-  console.log(req.body);
-  app.mailer.send('email', {
-    to: 'maccma.c2@gmail.com',
-    subject: 'Test Email',
-    otherProperty: 'name: ' + req.body.name + ', email: ' + req.body.email + ', phone: ' + req.body.phone + ', messaje: ' + req.body.message // All additional properties are also passed to the template as local variables.
+  app.mailer.send('email',
+  {
+    to: 'comercial@mctecnia.com, maccma.c2@mctecnia.com',
+    subject: 'Contactenos pagina web',
+    name: req.body.name,
+    email: req.body.email,
+    phone: req.body.phone,
+    text: req.body.message,
   }, function (err) {
     if (err) {
       console.log(err);
