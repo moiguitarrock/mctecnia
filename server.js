@@ -2,6 +2,7 @@ var express = require('express');
 var mailer = require('express-mailer');
 var bodyParser = require('body-parser');
 var path = require('path');
+var favicon = require('serve-favicon');
 
 var app = express(),
     mailer = require('express-mailer');
@@ -27,6 +28,8 @@ app.set('view engine', 'jade');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/index.html'));
